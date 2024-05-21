@@ -7,7 +7,7 @@ const pool = new Pool({
   database: process.env.PGDATABASE,
   allowExitOnIdle: true,
   port: process.env.PGPUERTO,
-  ssl: true
+  // ssl: true
 });
 
 try {
