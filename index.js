@@ -19,6 +19,9 @@ app.use(express.json());
 app.use(cors());
 app.use("/", route);
 
+//Levanta el servidor
+app.listen(PORT, console.log("Servidor iniciado!!!"));
+
 //Prueba MercadoPago
 
 app.post("/create_preference", async (req, res) => {
@@ -51,7 +54,6 @@ app.post("/create_preference", async (req, res) => {
   }
 });
 
-//Levanta el servidor
-app.listen(PORT, console.log("Servidor iniciado!!!"));
+
 
 module.exports = app;
